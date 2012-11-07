@@ -1,0 +1,27 @@
+This is a project of several small JavaFX 2.x examples. You can read more about some of them on my blog.
+
+http://java-no-makanaikata.blogspot.no/
+
+- properties_binding
+a small mvc example demonstrating how you connect the content in a Textfield and a StringProperty in you model class.
+
+- sizing_alignment
+code example from Oracle JavaFX site demonstrating sizing and alignemnt.
+
+- text_wordwrap
+a small example demonstrating how you can achieve word wrapping, and support for resizing the window.
+
+- webview_resize
+How to make the WebView browser behave like the Text component with wordwrapping and support for resizing.
+
+Maven:
+If you look closely you will see that I am using a few dependencies that is not commonly found in 
+ordinary repositories.
+
+JavaFX:
+This jar comes bundled with your ordinary JDK7+ if you keep yourself updated.
+
+Jemmy:
+mvn 'install:install-file' '-Dfile=C:/Download_Code/Jemmy/tools/Jemmy/JemmyFX/dist/JemmyFX.jar' '-DgroupId=com.oracle' '-DartifactId=jemmyFX' '-Dversion=3.0-SNAPSHOT' '-Dpackaging=jar'
+
+ScenicView:
