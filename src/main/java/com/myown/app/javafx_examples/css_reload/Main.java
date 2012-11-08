@@ -49,7 +49,7 @@ public class Main extends Application {
 
 	private String[] cssFiles = new String[] { "mycss1.css", "mycss2.css" };
 
-	public String getCssFile() {
+	private String getCssFile() {
 		if (valg > cssFiles.length - 1)
 			valg = 0;
 		return "/css_reload/" + cssFiles[valg++];

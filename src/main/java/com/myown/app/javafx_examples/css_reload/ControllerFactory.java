@@ -21,7 +21,7 @@ public class ControllerFactory {
 
 	public AbstractController getNameFormPresenter() {
 		if (nameFormPresenter == null) {
-			nameFormPresenter = loadController( "/css_reload/oldfxml/nameform.fxml", NameFormPresenter.class);
+			nameFormPresenter = loadController( "/css_reload/fxml/nameform.fxml", NameFormPresenter.class);
 		}
 		return nameFormPresenter;
 	}

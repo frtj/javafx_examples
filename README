@@ -14,14 +14,42 @@ a small example demonstrating how you can achieve word wrapping, and support for
 - webview_resize
 How to make the WebView browser behave like the Text component with wordwrapping and support for resizing.
 
+- css_reload
+A demonstration of how to use css styling, simple trick to reload css with F5, use of FXML, and MVP.
+
+
+Preparing in order to build and run the code:
+
 Maven:
 If you look closely you will see that I am using a few dependencies that is not commonly found in 
 ordinary repositories.
 
 JavaFX:
 This jar comes bundled with your ordinary JDK7+ if you keep yourself updated.
+Just change the path to where you have installed your JDK and JavaFX. Easy peasy.
 
 Jemmy:
+http://jemmy.java.net/JemmyFXGuide/jemmy-guide.html
+http://jemmy.java.net/
+Get yourself a mercurial client. I used TortoiseHg.
+Make your computer dirty by getting and installing the hopeless Apache Ant.
+Read the install instructions on where to checkout the code, how to build, and where to find the 
+resulting .jar file.
+
+Install the resulting .jar file into your own maven repo, perhaps like this:
+MS PowerShell escaped command(remove the exess use of ' when using other command line tools):
 mvn 'install:install-file' '-Dfile=C:/Download_Code/Jemmy/tools/Jemmy/JemmyFX/dist/JemmyFX.jar' '-DgroupId=com.oracle' '-DartifactId=jemmyFX' '-Dversion=3.0-SNAPSHOT' '-Dpackaging=jar'
 
+You need some additional jars..
+mvn 'install:install-file' '-Dfile=C:\Download_Code\Jemmy\tools\Jemmy\JemmyFX\lib\jemmy\JemmyCore.jar' '-DgroupId=com.oracle' '-DartifactId=JemmyCore' '-Dversion=3.0-SNAPSHOT' '-Dpackaging=jar'
+mvn 'install:install-file' '-Dfile=C:\Download_Code\Jemmy\tools\Jemmy\GlassRobot\dist\GlassRobot.jar' '-DgroupId=com.oracle' '-DartifactId=GlassRobot' '-Dversion=3.0-SNAPSHOT' '-Dpackaging=jar'
+mvn 'install:install-file' '-Dfile=C:\Download_Code\Jemmy\tools\Jemmy\GlassImage\dist\GlassImage.jar' '-DgroupId=com.oracle' '-DartifactId=GlassImage' '-Dversion=3.0-SNAPSHOT' '-Dpackaging=jar'
+
+
+
+
 ScenicView:
+http://fxexperience.com/scenic-view/
+Fortunately you don't have to get any filthy useless tools for this. Download the zip, unzip, and 
+then install the .jar into you maven repo.
+mvn 'install:install-file' '-Dfile=C:\Download\javafx-ScenicView-1.2.0/ScenicView.jar' '-DgroupId=com.oracle' '-DartifactId=ScenicView' '-Dversion=1.2.0' '-Dpackaging=jar'
